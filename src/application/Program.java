@@ -13,7 +13,7 @@ public class Program {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		
+
 		try {
 			System.out.println("Room number: ");
 			int number = sc.nextInt();
@@ -39,11 +39,11 @@ public class Program {
 				System.out.println("Reservation: " + reservation);
 
 			}
-		} catch(ParseException e) {
+		} catch (ParseException e) {
 			System.out.println("Invalid date format !!!");
-		} catch(DomainException e) {
+		} catch (DomainException e) {
 			System.out.println("Error in reservation: " + e.getMessage());
-		} catch(RuntimeException e) {
+		} catch (RuntimeException e) {
 			System.out.println("Unexpected error");
 		}
 
